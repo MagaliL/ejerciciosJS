@@ -5,14 +5,19 @@ let numUser = prompt("Ingrese un número real: ");
 
 // Verificar clase de número
 
-if(numUser == 0){
+if (numUser == null ){
+    alert("No se ingreso un número.");
+}else if (numUser == ""){
+    alert("No se ingreso ningún número.");
+}
+else if(numUser == 0){
     alert(`El número que usted ingreso es: cero`);
 
 } else if(numUser > 0) {
 
-    alert(`El número que usted ingreso, ${numUser}, es positivo`);
+    alert(`El número que usted ingreso: ${numUser}, es positivo`);
 
 }else if (numUser < 0) {
-    alert(`El número que usted ingreso, ${numUser}, es negativo`);
+    alert(`El número que usted ingreso: ${numUser}, es negativo`);
 
 };
